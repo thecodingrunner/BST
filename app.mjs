@@ -1,3 +1,6 @@
+import insert from "./insert.mjs"
+import delete from "./delete.mjs"
+
 // Node class
 class Node {
   constructor(value) {
@@ -90,3 +93,9 @@ const prettyPrint = (node, prefix = "", isLeft = true) => {
 // Pretty print the binary tree
 prettyPrint(tree)
 
+
+
+
+insert(tree,6);
+
+prettyPrint(tree)
