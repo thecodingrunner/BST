@@ -1,5 +1,5 @@
 import insert from "./insert.mjs"
-import delete from "./delete.mjs"
+import del from "./delete.mjs"
 
 // Node class
 class Node {
@@ -97,5 +97,25 @@ prettyPrint(tree)
 
 
 insert(tree,6);
+
+prettyPrint(tree)
+
+del(tree,6) 
+
+prettyPrint(tree)
+
+del(tree,1)
+
+prettyPrint(tree)
+
+del(tree,4)
+
+prettyPrint(tree)
+
+del(tree,67)
+
+prettyPrint(tree)
+
+del(tree,324)
 
 prettyPrint(tree)
