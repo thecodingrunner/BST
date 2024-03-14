@@ -5,6 +5,8 @@ import levelOrder from "./levelOrder.mjs"
 import inOrder from "./inOrder.mjs"
 import preOrder from "./preOrder.mjs"
 import postOrder from "./postOrder.mjs"
+import depth from "./depth.mjs"
+import height from "./height.mjs"
 
 
 // Node class
@@ -124,7 +126,7 @@ del(tree,67)
 
 del(tree,324)
 
-// prettyPrint(tree)
+prettyPrint(tree)
 
 console.log(find(tree,3))
 
@@ -135,3 +137,6 @@ console.log(inOrder(tree,(value) => {return value*2}))
 console.log(preOrder(tree,(value) => {return value*2}))
 
 console.log(postOrder(tree,(value) => {return value*2}))
+
+console.log(depth(tree,8))
+console.log(height(tree,6345))
