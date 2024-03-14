@@ -1,5 +1,11 @@
 import insert from "./insert.mjs"
 import del from "./delete.mjs"
+import find from "./find.mjs"
+import levelOrder from "./levelOrder.mjs"
+import inOrder from "./inOrder.mjs"
+import preOrder from "./preOrder.mjs"
+import postOrder from "./postOrder.mjs"
+
 
 // Node class
 class Node {
@@ -91,31 +97,41 @@ const prettyPrint = (node, prefix = "", isLeft = true) => {
 };
 
 // Pretty print the binary tree
-prettyPrint(tree)
+// prettyPrint(tree)
 
 
 
 
 insert(tree,6);
 
-prettyPrint(tree)
+// prettyPrint(tree)
 
 del(tree,6) 
 
-prettyPrint(tree)
+// prettyPrint(tree)
 
 del(tree,1)
 
-prettyPrint(tree)
+// prettyPrint(tree)
 
 del(tree,4)
 
-prettyPrint(tree)
+// prettyPrint(tree)
 
 del(tree,67)
 
-prettyPrint(tree)
+// prettyPrint(tree)
 
 del(tree,324)
 
-prettyPrint(tree)
+// prettyPrint(tree)
+
+console.log(find(tree,3))
+
+console.log(levelOrder(tree,(value) => {return value*2}))
+
+console.log(inOrder(tree,(value) => {return value*2}))
+
+console.log(preOrder(tree,(value) => {return value*2}))
+
+console.log(postOrder(tree,(value) => {return value*2}))
